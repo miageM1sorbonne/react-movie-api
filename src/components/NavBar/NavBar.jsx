@@ -28,12 +28,10 @@ const NavBar = () => {
                 {/* Input for searching movies and updating 'inputValue'. */}
                 <input type="text" placeholder="Search" onChange={(e) => setInputValue(e.target.value)}/>
             </nav>
-            {
             <Routes>
                 <Route path="" element={<TMDbLayout />} />    
                 <Route path="WatchLater" element={<WatchLater />} />  
             </Routes>
-            }
         </Fragment>
         </Container.Provider>
     );
