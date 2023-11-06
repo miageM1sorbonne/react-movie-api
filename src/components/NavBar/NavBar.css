@@ -1,0 +1,64 @@
+/* Default styles for larger screens */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-option h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.nav-option span {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.nav-option span:hover {
+    color: #fff;
+}
+
+input[type="text"] {
+    background-color: #444;
+    border: none;
+    padding: 5px 10px;
+    color: #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-option h1 {
+        font-size: 18px;
+    }
+
+    .nav-option span {
+        font-size: 14px;
+    }
+
+    input[type="text"] {
+        padding: 5px 8px;
+    }
+}
