@@ -9,10 +9,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <NavBar/>
-        <Routes>
-          <Route path="" element={<TMDbLayout />} /> 
-          <Route path="/WatchLater" element={<WatchLater />} />
-        </Routes>
       </BrowserRouter>
     </div>
  );
