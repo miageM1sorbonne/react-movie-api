@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import MovieList from '../MovieList/MovieList';
 import './MovieListByGenre.css';
-import { Container } from "../NavBar/NavBar";
+import { Container } from "../../App"; 
 
 const MovieListByGenre = ({ genreUrl, genre }) => {
   // Value from the context (navbar)
