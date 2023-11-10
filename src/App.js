@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar/NavBar";
 import TMDbLayout from "./components/TMDbLayout/TMDbLayout";
 import WatchLater from "./components/WatchLater/WatchLater";
 
-export const Container = React.createContext(); // Crée le contexte ici
+export const Container = React.createContext(); 
 
 function App() {
   const [inputValue, setInputValue] = useState("");

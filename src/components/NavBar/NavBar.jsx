@@ -18,12 +18,7 @@ const NavBar = ({ setInputValue }) => {
             <span>Watch Later</span>
           </NavLink>
         </div>
-        <input
-          type="text"
-          placeholder="Search"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-        />
+        <input type="text" placeholder="Search" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
       </nav>
     </Fragment>
   );

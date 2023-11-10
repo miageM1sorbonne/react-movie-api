@@ -29,7 +29,7 @@ const MovieListByGenre = ({ genreUrl, genre }) => {
   return (    
       <div className="movie-by-genre">
           {/* Display the genre as a heading. */}
-          <h2>{genre}</h2>
+          {movies.length > 1 && <h2>{genre}</h2>}
           
           {/* Render the MoviesContainer component and pass in the movie data and image URL. */}
           <MovieList movies={movies} Images={Images} />
