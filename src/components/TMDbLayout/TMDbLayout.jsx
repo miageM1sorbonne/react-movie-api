@@ -1,8 +1,10 @@
-import React from 'react';
+import React  from 'react';
 import MovieListByGenre from '../MovieListByGenre/MovieListByGenre';
 import requests from '../../request';
+import SearchBar from '../SearchBar/SearchBar';
 
-const TMDbLayout = () => {
+const TMDbLayout = ({setInputValue}) => {
+
  // Define a list of movie genres
  const genres = [
     { genre: 'Search', genreUrl: requests.fetchMovie },
@@ -16,8 +18,9 @@ const TMDbLayout = () => {
  ];
 
  return (
-    <div>
+    <div className="homepage">
       {/* Map through the list of genres and render a MoviesByGenre component for each */}
+      <SearchBar setInputValue={setInputValue} />
       {genres.map((genre) => (
         <MovieListByGenre key={genre.genre} genre={genre.genre} genreUrl={genre.genreUrl} />
       ))}

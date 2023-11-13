@@ -16,9 +16,9 @@ function App() {
       <BrowserRouter>
       <WatchListProvider>
         <Container.Provider value={inputValue}>
-          <NavBar setInputValue={setInputValue} />
+          <NavBar/>
           <Routes>
-            <Route path="" element={<TMDbLayout />} />
+            <Route path="" element={<TMDbLayout setInputValue={setInputValue} />} />
             <Route path="WatchLater" element={<WatchLater />} />
           </Routes>
         </Container.Provider>
