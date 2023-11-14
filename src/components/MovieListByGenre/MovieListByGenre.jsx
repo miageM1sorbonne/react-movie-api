@@ -10,7 +10,6 @@ const MovieListByGenre = ({ genreUrl, genre }) => {
   
   // Initialize state for storing movie data and set the image base URL.
   const [movies, setMovies] = useState([]);
-  const Images = 'https://image.tmdb.org/t/p/w500';
 
   // Function to fetch movies based on the genre and user input (only for search).
   const fetchMovies = async () => { 
@@ -33,7 +32,7 @@ const MovieListByGenre = ({ genreUrl, genre }) => {
           {movies.length > 1 && <h2>{genre}</h2>}
           
           {/* Render the MoviesContainer component and pass in the movie data and image URL. */}
-          <MovieList movies={movies} Images={Images} />
+          <MovieList movies={movies} Images={process.env.REACT_APP_ImagesLink} />
       </div>
   )
 }

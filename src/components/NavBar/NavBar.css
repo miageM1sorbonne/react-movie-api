@@ -1,34 +1,47 @@
 /* Default styles for larger screens */
 .navbar {
-    background-color: #333;
-    padding: 15px;
+    background: rgb(0,1,36);
+    background: linear-gradient(90deg, rgba(0,1,36,1) 0%, rgba(9,66,121,1) 49%, #00ffa2 100%);
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
 }
 
 .nav-option {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
 }
 
 .nav-option h1 {
     color: #fff;
+    text-decoration: none!important;
     margin: 0;
 }
 
 .nav-option span {
-    color: #ccc;
+   color: #ccc; 
+   font-size : 17px;
+   font-weight: bold;
+   /* color : red; */
+   text-decoration:none!important;
     cursor: pointer;
+    padding : 10px;
 }
 
 .nav-option span:hover {
     color: #fff;
+    border-radius : 5px;
+    background-color: #002c5f;
 }
 
+
+
 input[type="text"] {
-    background-color: #444;
+    background-color: #0d2846;
     border: none;
     padding: 5px 10px;
     color: #ccc;
@@ -36,10 +49,12 @@ input[type="text"] {
     transition: all 0.3s ease;
     border-radius: 5px;
     font-size: 16px;
+    width : 40%;
+    margin-right : 2em;
+    text-decoration: none;
 }
 
 input[type="text"]:focus {
-    background-color: #555;
     color: #fff;
     border-radius: 5px;
 }
