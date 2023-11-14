@@ -1,10 +1,8 @@
-.movie-list {
-    display: flex;
-    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si l'espace est insuffisant */
-  }
   
-  .movie-item {
-    /* Ajoutez d'autres styles au besoin */
-    margin-right: 20px; /* Marge entre les films */
+  .header .heading {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0px;
+    margin-left: 2%;
+    font-family: Arial, Helvetica, sans-serif
   }
-  

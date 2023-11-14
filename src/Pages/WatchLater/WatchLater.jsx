@@ -1,10 +1,8 @@
 import React, { Fragment, useContext } from "react";
 import { WatchListContext } from "../../providers/WatchList/WatchListState";
 import MovieCard from "../../components/MovieCard/MovieCard";
-import MovieList from "../../components/MovieList/MovieList";
 import MovieTitle from "../../components/MovieTitle/MovieTitle";
-import MovieDescription from "../../components/MovieDescription/MovieDescription";
-
+import './WatchLater.css';
 
 function WatchLater() {
   const { watchList } = useContext(WatchListContext);
