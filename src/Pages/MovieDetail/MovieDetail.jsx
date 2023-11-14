@@ -4,11 +4,8 @@ import './MovieDetail.css';
 
 const MovieDetail = ({ movie }) => {
 
-    const Images = 'https://image.tmdb.org/t/p/w500';
-
-
     const containerStyle = {
-        backgroundImage: `url(${Images}${movie.backdrop_path})`,
+        backgroundImage: `url(${process.env.ImagesLink}${movie.backdrop_path})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
@@ -23,7 +20,7 @@ const MovieDetail = ({ movie }) => {
             <div className="movieinfo-container" style={containerStyle}>
             <   div className="movieinfo-content">
                     <div className="movieinfo-thumb">
-                        <MovieCard movie={movie} Images={Images} />
+                        <MovieCard movie={movie} Images={process.env.REACT_APP_ImagesLink } />
                     </div>
                     <div className="movieinfo-text">
                         <h1>{movie.title}</h1>

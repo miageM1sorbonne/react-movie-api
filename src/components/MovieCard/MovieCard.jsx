@@ -32,7 +32,7 @@ const MovieCard = ({ movie, Images }) => {
             </Link>
 
             {/* ToggleButton */}
-            <Button type={'toggle'} children={!movieAlreadyAdded ? '+' : 'fa-heart'} onClick={(e) => onClick(e)} movieId={movie.id} />
+            <Button type={'toggle'} onClick={(e) => onClick(e)} movieId={movie.id} />
         </div>
     )
 }
