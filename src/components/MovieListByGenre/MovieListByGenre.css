@@ -1,3 +1,7 @@
-h2{
-    margin-bottom: 0%;
-}
+.movie-by-genre h2 {
+    font-size: 1.5rem;
+    color: #333; 
+    margin-bottom: 0px;
+    margin-left : 2%; 
+    font-family: Arial, Helvetica, sans-serif;
+  }

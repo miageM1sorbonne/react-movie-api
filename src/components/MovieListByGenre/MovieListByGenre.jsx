@@ -3,6 +3,7 @@ import MovieList from '../MovieList/MovieList';
 import './MovieListByGenre.css';
 import { Container } from "../../App"; 
 
+
 const MovieListByGenre = ({ genreUrl, genre }) => {
   // Value from the context (navbar)
   const inputValue = useContext(Container);
