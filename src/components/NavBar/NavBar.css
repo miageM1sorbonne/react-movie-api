@@ -1,6 +1,5 @@
 /* Default styles for larger screens */
 .navbar {
-    background: rgb(0,1,36);
     background: linear-gradient(90deg, rgba(0,1,36,1) 0%, rgba(9,66,121,1) 49%, #00ffa2 100%);
     
     display: flex;
@@ -41,23 +40,12 @@
 
 
 input[type="text"] {
-    background-color: #0d2846;
-    border: none;
-    padding: 5px 10px;
-    color: #ccc;
     outline: none;
     transition: all 0.3s ease;
     border-radius: 5px;
-    font-size: 16px;
-    width : 40%;
-    margin-right : 2em;
     text-decoration: none;
 }
 
-input[type="text"]:focus {
-    color: #fff;
-    border-radius: 5px;
-}
 
 /* Styles for smaller screens */
 @media screen and (max-width: 768px) {
