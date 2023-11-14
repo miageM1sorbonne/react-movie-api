@@ -2,7 +2,7 @@
 .navbar {
     background: rgb(0,1,36);
     background: linear-gradient(90deg, rgba(0,1,36,1) 0%, rgba(9,66,121,1) 49%, #00ffa2 100%);
-    padding: 15px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;

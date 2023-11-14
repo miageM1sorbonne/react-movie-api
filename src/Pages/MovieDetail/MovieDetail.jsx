@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import MovieCard from '../MovieCard/MovieCard';
+import MovieCard from '../../components/MovieCard/MovieCard';
 import './MovieDetail.css';
 
 const MovieDetail = ({ movie }) => {
