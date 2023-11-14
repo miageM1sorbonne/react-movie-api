@@ -2,6 +2,7 @@ import React, { Fragment, useContext } from "react";
 import "./NavBar.css";
 import { NavLink } from "react-router-dom";
 import { Container } from "../../App"; 
+import Logo from '../Logo/Logo';
 
 const NavBar = ({ setInputValue }) => {
   const inputValue = useContext(Container); 
@@ -10,9 +11,9 @@ const NavBar = ({ setInputValue }) => {
     <Fragment>
       <nav className="navbar">
         <div className="nav-option">
-          <h1>NETFLUX</h1>
+          
           <NavLink to="">
-            <span>Movies</span>
+          <Logo></Logo>
           </NavLink>
           <NavLink to="/WatchLater">
             <span>Watch Later</span>
