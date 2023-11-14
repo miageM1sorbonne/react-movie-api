@@ -1,7 +1,7 @@
 import React  from 'react';
-import MovieListByGenre from '../MovieListByGenre/MovieListByGenre';
+import MovieListByGenre from '../../components/MovieListByGenre/MovieListByGenre';
 import requests from '../../request';
-import SearchBar from '../SearchBar/SearchBar';
+import SearchBar from '../../components/SearchBar/SearchBar';
 
 const TMDbLayout = ({setInputValue}) => {
 
