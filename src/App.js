@@ -4,6 +4,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import TMDbLayout from "./components/TMDbLayout/TMDbLayout";
 import WatchLater from "./components/WatchLater/WatchLater";
+import Movie from "./Movie";
 import { WatchListProvider } from "./providers/WatchList/WatchListState";
 
 export const Container = React.createContext(); 
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route path="" element={<TMDbLayout setInputValue={setInputValue} />} />
             <Route path="WatchLater" element={<WatchLater />} />
+            <Route path="/movie/:id" element={<Movie />} />
           </Routes>
         </Container.Provider>
         </WatchListProvider>
