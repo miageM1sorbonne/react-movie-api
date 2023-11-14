@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
-import MovieImage from '../MovieImage/MovieImage';
-import MovieTitle from '../MovieTitle/MovieTitle';
+import MovieImage from '../MovieImage/MovieImage'
 import './MovieCard.css';
 import Button from '../Button/Button';
 import { WatchListContext } from '../../providers/WatchList/WatchListState';
@@ -38,7 +37,7 @@ const MovieCard = ({ movie, Images }) => {
             </Link>
             
             {/* Render the MovieTitle component with the 'title' or 'name' from 'movie'. */}
-            <MovieTitle title={movie.title || movie.name} />
+              {/*<MovieTitle title={movie.title || movie.name} />*/}
 
             {/* ToggleButton */}
             <Button type={'toggle'} children={!movieAlreadyAdded ? '+' : '✓'} onClick={(e) => onClick(e)} movieId={movie.id} />
