@@ -1,12 +1,10 @@
-import React, { Fragment, useContext } from "react";
+import React, { Fragment} from "react";
 import "./NavBar.css";
 import { NavLink } from "react-router-dom";
 import { Container } from "../../App"; 
 import Logo from '../Logo/Logo';
 
-const NavBar = ({ setInputValue }) => {
-  const inputValue = useContext(Container); 
-
+const NavBar = () => {
   return (
     <Fragment>
       <nav className="navbar">
@@ -19,7 +17,6 @@ const NavBar = ({ setInputValue }) => {
             <span>Watch Later</span>
           </NavLink>
         </div>
-        <input type="text" placeholder="Search" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
       </nav>
     </Fragment>
   );

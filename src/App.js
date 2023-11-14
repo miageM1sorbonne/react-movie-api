@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar/NavBar";
 import TMDbLayout from "./components/TMDbLayout/TMDbLayout";
 import WatchLater from "./Pages/WatchLater/WatchLater";
 import { WatchListProvider } from "./providers/WatchList/WatchListState";
-
+import Movie from "./Movie";
 export const Container = React.createContext(); 
 
 function App() {
@@ -16,10 +16,11 @@ function App() {
       <BrowserRouter>
       <WatchListProvider>
         <Container.Provider value={inputValue}>
-          <NavBar setInputValue={setInputValue} />
+          <NavBar/>
           <Routes>
-            <Route path="" element={<TMDbLayout />} />
+            <Route path="" element={<TMDbLayout setInputValue={setInputValue} />} />
             <Route path="WatchLater" element={<WatchLater />} />
+            <Route path="/movie/:id" element={<Movie />} />
           </Routes>
         </Container.Provider>
         </WatchListProvider>

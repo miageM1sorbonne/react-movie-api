@@ -1,0 +1,34 @@
+.fxWvvr {
+    width: 100%;
+    height: 105px;
+    background: rgb(28, 28, 28);
+    padding: 25px 20px 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+.cVmQYF {
+    max-width: 1280px;
+    width: 100%;
+    height: 55px;
+    background: rgb(53, 53, 53);
+    margin: 0px auto;
+    border-radius: 40px;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.cVmQYF input {
+    font-family: Abel, sans-serif;
+    font-size: 28px;
+    position: absolute;
+    left: 0px;
+    margin: 8px 0px;
+    padding: 0px 0px 0px 60px;
+    border: 0px;
+    width: 95%;
+    background: transparent;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
