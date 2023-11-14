@@ -15,18 +15,13 @@ const MovieCard = ({ movie, Images }) => {
     const movieAlreadyAdded = storedMovie ? true : false;
 
     const onClick = (e) => {
-        console.log(e);
+        //console.log(e);
         if (e) {
-          console.log('add ' + movie.title + ' into watch list');
           if(!movieAlreadyAdded)
             addMovieToWatchList(movie);
-          
-
-        } else {
-          console.log('deleted from watch list');
-          removeMovieFromWatchList(movie.id);
-          
         }
+        else 
+          removeMovieFromWatchList(movie.id);
       };
 
     return (
