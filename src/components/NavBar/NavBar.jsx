@@ -13,6 +13,9 @@ const NavBar = () => {
           <NavLink to="">
           <Logo></Logo>
           </NavLink>
+          <NavLink to="">
+          <span>Movie List</span>
+          </NavLink>
           <NavLink to="/WatchLater">
             <span>Watch Later</span>
           </NavLink>

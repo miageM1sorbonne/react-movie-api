@@ -1,0 +1,10 @@
+.movie-list {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si l'espace est insuffisant */
+  }
+  
+  .movie-item {
+    /* Ajoutez d'autres styles au besoin */
+    margin-right: 20px; /* Marge entre les films */
+  }
+  
