@@ -5,7 +5,7 @@ import './MovieDetail.css';
 const MovieDetail = ({ movie }) => {
 
     const containerStyle = {
-        backgroundImage: `url(${process.env.ImagesLink}${movie.backdrop_path})`,
+        backgroundImage: `url(${process.env.REACT_APP_ImagesLink}${movie.backdrop_path})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
