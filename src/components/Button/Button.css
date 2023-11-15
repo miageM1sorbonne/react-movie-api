@@ -2,7 +2,6 @@
     color: #fff;
     border: none;
     border-radius: 4px;
-    padding: 10px 20px;
     cursor: pointer;
     text-decoration: none;
     text-transform: none;
@@ -10,20 +9,23 @@
   }
   
   .btn.toggle {
+    position : absolute;
     background-color: rgb(60, 72, 84);
     border-radius: 50%;
     width: 30px;
     height: 30px;
     font-size: 24px;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     line-height: 1;
+    right: 10px;
+    bottom: 25px;
   }
   
   .btn.toggle.active {
-    background-color: #28a745;
+    position: absolute;
+    background-color: rgb(220, 105, 105);
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -33,7 +35,9 @@
     justify-content: center;
     text-align: center;
     line-height: 1;
-  }
+    right: 10px;
+    bottom: 25px;
+}
   
   
   

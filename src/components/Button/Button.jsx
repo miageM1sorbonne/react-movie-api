@@ -21,7 +21,7 @@ const Button = ({ movieId, onClick }) => {
 
   return (
     <button className={`btn toggle ${isActive ? 'active' : ''}`} onClick={handleToggle}>
-      {isActive ? '✓' : '+'}
+      {isActive ? '♡' : '+'}
     </button>
   );
 };

@@ -1,0 +1,14 @@
+.logo {
+    display: inline-block;
+  }
+  
+  .standard img {
+    width: 100px; /* Taille standard de l'image */
+    height: auto;
+  }
+  
+  .small img {
+    width: 200px; /* Taille plus petite pour la barre de navigation */
+    height: auto;
+  }
+  

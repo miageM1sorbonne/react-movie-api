@@ -1,9 +1,20 @@
 import React from 'react'
 import MovieList from './MovieList'
+import { WatchListProvider } from '../../providers/WatchList/WatchListState';
+import { MemoryRouter } from 'react-router-dom';
 
 export default {
     component: MovieList,
-    title: 'components/MovieList'
+    title: 'components/MovieList',
+    decorators: [
+        (Story) => (
+            <WatchListProvider>
+                <MemoryRouter>
+                    <Story />
+                </MemoryRouter>
+            </WatchListProvider>
+        ),
+      ],
 };
 
 const Template = (args) => <MovieList {...args} />;
