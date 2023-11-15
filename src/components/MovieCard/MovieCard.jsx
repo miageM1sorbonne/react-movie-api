@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import MovieImage from '../MovieImage/MovieImage'
+import MovieImage from '../MovieDetails/MovieImage/MovieImage'
 import './MovieCard.css';
 import Button from '../Button/Button';
 import { WatchListContext } from '../../providers/WatchList/WatchListState';

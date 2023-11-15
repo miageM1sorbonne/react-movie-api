@@ -1,7 +1,7 @@
 import React, { Fragment, useContext } from "react";
 import { WatchListContext } from "../../providers/WatchList/WatchListState";
 import MovieCard from "../../components/MovieCard/MovieCard";
-import MovieTitle from "../../components/MovieTitle/MovieTitle";
+import MovieTitle from "../../components/MovieDetails/MovieTitle/MovieTitle";
 import './WatchLater.css';
 
 function WatchLater() {

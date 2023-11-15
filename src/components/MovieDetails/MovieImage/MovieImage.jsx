@@ -1,5 +1,5 @@
 import React from 'react';
-import NoImg from '../../no-image.png';
+import NoImg from './no-image.png';
 import './MovieImage.css';
 
 // MovieImage component responsible for displaying a movie's image.

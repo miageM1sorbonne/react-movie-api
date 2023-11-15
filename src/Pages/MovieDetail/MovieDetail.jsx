@@ -1,9 +1,9 @@
 import { Fragment } from "react";
 import MovieCard from '../../components/MovieCard/MovieCard';
-import MovieTitle from '../../components/MovieTitle/MovieTitle';
-import MovieRuntime from '../../components/MovieRuntime/MovieRuntime';
-import MovieReleaseYear from '../../components/MovieReleaseYear/MovieReleaseYear';
-import MovieBudget from '../../components/MovieBudget/MovieBudget';
+import MovieTitle from '../../components/MovieDetails/MovieTitle/MovieTitle';
+import MovieRuntime from '../../components/MovieDetails/MovieRuntime/MovieRuntime';
+import MovieReleaseYear from '../../components/MovieDetails/MovieReleaseYear/MovieReleaseYear';
+import MovieBudget from '../../components/MovieDetails/MovieBudget/MovieBudget';
 import './MovieDetail.css';
 
 const MovieDetail = ({ movie, director}) => {
