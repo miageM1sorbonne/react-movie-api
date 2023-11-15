@@ -6,6 +6,7 @@ import TMDbLayout from "./Pages/TMDbLayout/TMDbLayout";
 import WatchLater from "./Pages/WatchLater/WatchLater";
 import { WatchListProvider } from "./providers/WatchList/WatchListState";
 import Movie from "./Movie";
+
 export const Container = React.createContext(); 
 
 function App() {

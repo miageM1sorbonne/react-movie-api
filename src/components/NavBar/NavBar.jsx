@@ -1,7 +1,6 @@
 import React, { Fragment} from "react";
 import "./NavBar.css";
 import { NavLink } from "react-router-dom";
-import { Container } from "../../App"; 
 import Logo from '../Logo/Logo';
 
 const NavBar = () => {
