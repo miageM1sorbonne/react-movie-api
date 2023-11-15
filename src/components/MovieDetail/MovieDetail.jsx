@@ -6,7 +6,7 @@ import MovieReleaseYear from '../MovieReleaseYear/MovieReleaseYear';
 import MovieBudget from '../MovieBudget/MovieBudget';
 import './MovieDetail.css';
 
-const MovieDetail = ({ movie }) => {
+const MovieDetail = ({ movie, director}) => {
 
     const Images = 'https://image.tmdb.org/t/p/w500';
     const backgroundStyle = {
@@ -19,13 +19,6 @@ const MovieDetail = ({ movie }) => {
         filter: 'blur(4px)',
         zIndex: '-1',
     };
-
-    /*
-    const getDirector = () => {
-        const director = credits.crew.find(member => member.job === 'Director').name;
-        return director;
-    };
-    */
     
     const getGenres = (max) => {
         return movie.genres?.slice(0, max).map(genre => genre.name).join(', ') ?? 'Unknown';
@@ -47,12 +40,12 @@ const MovieDetail = ({ movie }) => {
                             <h3>IMDB rating</h3>
                             <div className="score">{movie.vote_average}</div>
                         </div>
-                        {/*
+                        
                         <div>
-                            <h3>directors</h3>
-                            <p>{credits}</p>
+                            <h3>director</h3>
+                            <p>{director}</p>
                         </div>
-                        */}
+                        
                         <div>
                             <h3>genre</h3>
                             <p>{getGenres(4)}</p>

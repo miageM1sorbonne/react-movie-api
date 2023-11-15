@@ -2,48 +2,43 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import requests from './request';
 import MovieDetail from './components/MovieDetail/MovieDetail';
+import MovieCast from './components/MovieCast/MovieCast';
 
 const Movie = () => {
 
     const [movie, setMovieDetail] = useState({});
-    // const [credits, setMovieCredits] = useState({});
+    const [director, setMovieDirector] = useState("");
+    const [credits, setMovieCredits] = useState({});
     const { id } = useParams();
   
     useEffect(() => {
-
-      const fetchMovieDetail = async () => {
-        try {
-            const response = await fetch(`${requests.fetchMovieDetail(id)}`);
-            const data = await response.json();
-            setMovieDetail(data);
-        } catch (error) {
-            console.error('Erreur lors de la récupération des détails du film :', error);
-        }
-      };
-
-      /*
-      const fetchMovieCredits = async () => {
-        try {
-            const response = await fetch(`${requests.fetchMovieCredits(id)}`);
-            const data = await response.json();
-            //const director = data.crew.find(member => member.job === 'Director').name;
-            console.log(director);
-            setMovieCredits(director);
+      const fetchMovieData = async () => {
+          try {
+              // Fetch movie details
+              const detailResponse = await fetch(requests.fetchMovieDetail(id));
+              const detailData = await detailResponse.json();
+              setMovieDetail(detailData);
+  
+              // Fetch movie credits
+              const creditsResponse = await fetch(requests.fetchMovieCredits(id));
+              const creditsData = await creditsResponse.json();
+              setMovieCredits(creditsData);
+              
+              const director = creditsData.crew.find(member => member.job === 'Director')?.name || 'Unknown Director';
+              setMovieDirector(director);
             
-        } catch (error) {
-            console.error('Erreur lors de la récupération des crédits du film :', error);
-        }
+          } catch (error) {
+              console.error('Erreur lors de la récupération des données du film :', error);
+          }
       };
-      */
-
-      fetchMovieDetail();
-      //fetchMovieCredits();
-
+  
+      fetchMovieData();
   }, [id]);
+  
 
   return (
     <>
-      <MovieDetail movie={movie}></MovieDetail>
+      <MovieDetail movie={movie} director={director}></MovieDetail>
     </>
   );
 };
