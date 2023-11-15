@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import requests from './request';
-import MovieDetail from './components/MovieDetail/MovieDetail';
 import MovieCast from './components/MovieCast/MovieCast';
 import MovieDetail from './Pages/MovieDetail/MovieDetail';
 
