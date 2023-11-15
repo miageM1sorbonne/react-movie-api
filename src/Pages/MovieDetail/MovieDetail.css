@@ -12,7 +12,7 @@
 }
 
 .moviedetail-bar {
-    background-color: #000;
+    background: linear-gradient(90deg, #00ffa2 0%, rgba(9,66,121,1) 49%, #000124 100%);
     color: white;
     border-radius: 0 0 20px 20px;
     margin: 0 240px;
@@ -53,5 +53,5 @@
 .score {
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
+    color: #00ffa2;
 }
