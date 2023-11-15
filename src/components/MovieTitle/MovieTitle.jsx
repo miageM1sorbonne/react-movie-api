@@ -1,7 +1,6 @@
 import React from 'react';
 import './MovieTitle.css';
 
-// MovieTitle component responsible for displaying a movie's title.
 // It receives a 'title' prop.
 const MovieTitle = ({ title }) => {
     // Check if 'title' is not defined, and if so, log a message and return null.
@@ -13,7 +12,6 @@ const MovieTitle = ({ title }) => {
     // Determine the CSS class name based on the length of the title.
     const titleClassName = title.length > 20 ? 'title title-long' : 'title';
 
-    // Render the movie title with the determined CSS class.
     return <h3 className={titleClassName}>{title}</h3>;
 };
 
