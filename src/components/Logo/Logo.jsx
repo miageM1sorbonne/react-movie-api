@@ -1,9 +1,9 @@
 import React from 'react';
 import './Logo.css';
-import logo from './standard-logo2.png';
+import logo from './standard-logo.png';
 
 const Logo = ({ isSmall = false }) => {
-  const imageSize = isSmall ? 'small' : 'standard';
+  const imageSize = isSmall ? 'big' : 'standard';
 
   return (
     <div className={`logo ${imageSize}`}>

@@ -12,13 +12,14 @@ const MovieTitle = ({ title, size }) => {
     }
 
     switch(size){
-        case 'moviecard':
+        case 'moviedetail':
+            return <h2 className="moviedetail-title">{title}</h2>; 
+
+        default :
             // Determine the CSS class name based on the length of the title.
             const titleClassName = title.length > 20 ? 'title title-long' : 'title';
             // Render the movie title with the determined CSS class.
             return <h3 className={titleClassName}>{title}</h3>;
-        case 'moviedetail':
-            return <h2 className="moviedetail-title">{title}</h2>; 
     }
 };
 

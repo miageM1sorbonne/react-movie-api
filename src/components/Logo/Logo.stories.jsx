@@ -13,7 +13,7 @@ StandardSize.args = {
   isSmall: false,
 };
 
-export const SmallSize = Template.bind({});
-SmallSize.args = {
+export const BigSize = Template.bind({});
+BigSize.args = {
   isSmall: true,
 };
