@@ -1,52 +1,58 @@
-.movieinfo-content {
+.moviedetail-content {
     display: flex;
     margin: 100px 240px 0 240px;
     background: rgb(0, 0, 0, 0.7);
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     color: white;
     padding: 28px 48px;
 }
 
-.movieinfo-thumb {
+.moviedetail-thumb {
     display: flex;
     justify-content: center;
 }
 
-.movieinfo-text {
-    padding-left: 40px;
+.moviedetail-bar {
+    background-color: #000;
+    color: white;
+    border-radius: 0 0 20px 20px;
+    margin: 0 240px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
 }
 
-.movieinfo-text h1 {
-    font-size: 40px;
-    margin-bottom: 28px;
-}
-
-.movieinfo-text h3 {
+.moviedetail-text h3 {
     font-size: 18px;
     margin-bottom: 8px;
     text-align: start;
 }
 
-.movieinfo-text p {
+.moviedetail-text {
+    padding-left: 40px;
+}
+
+.moviedetail-text p {
     font-size: 16px;
     margin-bottom: 16px;
 }
 
-.rating-director {
+.moviedetail-more {
     display: flex;
 }
 
-.rating-director > div {
+.moviedetail-more > div {
     margin-right: 20px;
 }
 
-.rating-director h3 {
+.moviedetail-more h3 {
     font-size: 16px;
     margin-bottom: 8px;
+    text-transform: uppercase;
 }
 
 .score {
     font-size: 24px;
     font-weight: bold;
-    color: #ff9800; /* Couleur d'exemple, à ajuster selon vos besoins */
+    color: #fff;
 }

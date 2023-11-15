@@ -38,7 +38,7 @@ const MovieCard = ({ movie, Images }) => {
             </Link>
             
             {/* Render the MovieTitle component with the 'title' or 'name' from 'movie'. */}
-            <MovieTitle title={movie.title || movie.name} />
+            <MovieTitle title={movie.title || movie.name} size="moviecard"/>
 
             {/* ToggleButton */}
             <Button type={'toggle'} children={!movieAlreadyAdded ? '+' : '✓'} onClick={(e) => onClick(e)} movieId={movie.id} />

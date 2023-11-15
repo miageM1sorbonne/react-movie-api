@@ -1,11 +1,10 @@
-/* MovieRuntime.css */
-.movie-runtime {
+.movie-budget {
     display: flex;
     justify-content: center;
     align-items: center;  
 }
 
-.movie-runtime-icon {
+.movie-budget-icon {
     margin-top: 4px;
     margin-right: 4px;
 }
