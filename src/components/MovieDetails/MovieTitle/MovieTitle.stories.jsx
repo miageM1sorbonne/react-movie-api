@@ -6,17 +6,9 @@ export default {
     title: 'components/MovieTitle',
 };
 
-// Story for the default case
-export const Default = () => (
-    <MovieTitle
-        title="Avenger"
-    />
-);
+const Template = (args) => <MovieTitle {...args} />;
 
-// Story for the 'moviedetail' case
-export const MovieDetail = () => (
-    <MovieTitle
-        title="Avenger"
-        size="moviedetail"
-    />
-);
+export const Default = Template.bind({});
+Default.args = {
+    title: 'Avenger',
+};
