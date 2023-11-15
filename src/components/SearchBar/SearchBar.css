@@ -1,0 +1,40 @@
+.fxWvvr {
+    width: 100%;
+    height: 105px;
+    background: linear-gradient(90deg, rgba(0,1,36,1) 0%, rgba(9,66,121,1) 49%, #00ffa2 100%);
+    padding: 25px 20px 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+
+input[type="text"]:focus {
+    color: black;
+    border-radius: 5px;
+}
+
+.cVmQYF {
+    max-width: 1280px;
+    width: 100%;
+    height: 55px;
+    background: white;
+    margin: 0px auto;
+    border-radius: 40px;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.cVmQYF input {
+    font-family: Abel, sans-serif;
+    font-size: 28px;
+    position: absolute;
+    left: 0px;
+    margin: 8px 0px;
+    padding: 0px 0px 0px 60px;
+    border: 0px;
+    width: 95%;
+    background: transparent;
+    height: 40px;
+    color: black;
+    box-sizing: border-box;
+}

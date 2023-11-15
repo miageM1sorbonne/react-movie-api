@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar";
+import TMDbLayout from "./Pages/TMDbLayout/TMDbLayout";
+import WatchLater from "./Pages/WatchLater/WatchLater";
+import { WatchListProvider } from "./providers/WatchList/WatchListState";
+import Movie from "./Movie";
+
+export const Container = React.createContext(); 
 
 function App() {
+  const [inputValue, setInputValue] = useState("");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <WatchListProvider>
+        <Container.Provider value={inputValue}>
+          <NavBar/>
+          <Routes>
+            <Route path="" element={<TMDbLayout setInputValue={setInputValue} />} />
+            <Route path="WatchLater" element={<WatchLater />} />
+            <Route path="/movie/:id" element={<Movie />} />
+          </Routes>
+        </Container.Provider>
+        </WatchListProvider>
+      </BrowserRouter>
     </div>
   );
 }
