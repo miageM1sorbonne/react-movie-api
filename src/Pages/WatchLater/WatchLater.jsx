@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from "react";
+import React, { useContext } from "react";
 import { WatchListContext } from "../../providers/WatchList/WatchListState";
 import MovieCard from "../../components/MovieCard/MovieCard";
 import MovieTitle from "../../components/MovieDetails/MovieTitle/MovieTitle";
@@ -8,7 +8,6 @@ function WatchLater() {
   const { watchList } = useContext(WatchListContext);
 
   return (
-    
     <div className="movie-page">
         <div className="header">
           <h1 className="heading">My Watch List</h1>
