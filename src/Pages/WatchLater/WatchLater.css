@@ -1,8 +1,9 @@
 .movie-page
 {
-    background: rgb(0,1,36);
-    background: linear-gradient(90deg, #000124 0%, rgba(9,66,121,1) 49%, #00ffa2 100%);
-    padding-bottom: 10em;
+  color : white;
+  background: rgb(0,1,36);
+  background: linear-gradient(90deg, #000124 0%, rgba(9,66,121,1) 49%, #00ffa2 100%);
+  padding-bottom: 10em;
 }
 
 

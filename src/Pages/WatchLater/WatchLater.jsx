@@ -8,8 +8,8 @@ function WatchLater() {
   const { watchList } = useContext(WatchListContext);
 
   return (
-    <Fragment>
-      <div className="movie-page">
+    
+    <div className="movie-page">
         <div className="header">
           <h1 className="heading">My Watch List</h1>
         </div>
@@ -28,7 +28,7 @@ function WatchLater() {
           )}
         </div>
       </div>
-    </Fragment>
+  
   );
 }
 
